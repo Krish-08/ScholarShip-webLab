@@ -39,7 +39,7 @@ nav .mainMenu li a {
   /* transition: 1s; */
 }
 nav .mainMenu li a:hover {
-  color: red;
+  color: #CC5500;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -56,47 +56,29 @@ nav .mainMenu .closeMenu,
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  nav {
-    justify-content: space-evenly;
-  }
-  nav .mainMenu {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #234ad4;
-    color: #fff;
-    transition: top 0.5s ease;
-    align-items: center;
-    display: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  nav .openMenu {
-    display: block;
-  }
-  nav .mainMenu li a {
-    color: #fff;
-    font-weight: bold;
-  }
-  nav .mainMenu li a:hover {
-    color: white;
-  }
-  .icons i {
-    display: inline-block;
-    padding: 12px;
-  }
+/* submit  */
+.btn {
+  background: transparent;
+  width: 200px;
+  position: relative;
+  padding: 15px;
+  color: #1e8acd;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 500ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  border-radius: 4px;
+  font-weight: 600;
+  overflow: hidden;
+  border: 2px solid #1e8acd;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: #234ad4;
+  color: white;
 }
 
 .nav-underline,
@@ -136,6 +118,8 @@ nav .mainMenu .closeMenu,
   position: absolute;
   bottom: 1.3rem;
   left: 31%;
+  margin-top: 20px; 
+  margin-bottom: 20px;
   transform: translateX(-50%);
   background-color: #ff7518;
   width: 2rem;
@@ -144,7 +128,7 @@ nav .mainMenu .closeMenu,
   
 }
 .logo_name img{
-  width: 40px;
+  width: 30px;
   display: inline;
 }
 .logo_name {
@@ -156,7 +140,7 @@ nav .mainMenu .closeMenu,
  
 }
 .logo_name_dec span{
-  font-size:150%;
+  font-size:100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -171,28 +155,38 @@ nav .mainMenu .closeMenu,
 
 }
 
+.small-image{
+  width:100%;
+}
+
 /* About Section */
 .about {
   background-color: #234ad4;
-  
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2%;
   border-radius: 2em;
-  margin: 3%;
+  margin: 5%;
+  flex-direction: column;
 }
 
 .about-content {
   color: #fff;
   font-size: 1.6rem;
   justify-content: left;
+  margin: 2px 2px 10px 2px;
+
 }
+
 .about-us-heading {
+  margin-top: 24px;
   margin-bottom: 20px;
   color: #fff;
   font-size: 3rem;
 }
+
+
 
 /*Category*/
 .category {
@@ -202,10 +196,13 @@ nav .mainMenu .closeMenu,
   align-items: center;
   margin: 4%;
   
+  
 }
 .category_heading {
   color: #234ad4;
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-top: 20px; 
+  margin-bottom: 20px;
 }
 
 .role-section {
@@ -234,7 +231,7 @@ nav .mainMenu .closeMenu,
 .role-cards {
   display: flex;
   text-align: center;
-  padding: 70px 10px 0;
+  padding: 39px 10px 0;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
@@ -257,6 +254,10 @@ nav .mainMenu .closeMenu,
   color: white;
 }
 
+.small-image{
+  width: 50%;
+}
+
 .contributer-role-card-content {
   display: flex;
   padding: 30px;
@@ -267,6 +268,7 @@ nav .mainMenu .closeMenu,
   font-size: 16px;
   font-weight: 500;
   color: #4a4a4a;
+  
 }
 
 .mentor-role-card-heading {
@@ -300,7 +302,7 @@ nav .mainMenu .closeMenu,
 
 /* Contact */
 .contact {
-  display: flex;
+  display: flex;  
   background-color: #234ad4;
   height: 96%;
   width: 96%;
@@ -311,15 +313,6 @@ nav .mainMenu .closeMenu,
   margin: 2%;
 }
 
-.contact-box1 {
-  align-items: left;
-
-}
-
-.contact-box2{
-  align-items: right;
-
-}
 
 .contact-section {
   display: flex;
@@ -337,7 +330,7 @@ nav .mainMenu .closeMenu,
 }
 .contact-us-section {
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   align-items: center;
   background-color: #ffffff;
   width: 60rem;
@@ -352,18 +345,154 @@ nav .mainMenu .closeMenu,
   /* flex-direction: row;
   justify-content: space-around; */
   
-  width: 20vh;
-  height:50vh;
+  width: 48%;
+  /* height:50vh; */
 
   margin:3%;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 2rem;  
 
 }
 
+.contact-container:first-child{
+  align-items: center;
+  align-content: center;
+}
+
+.input-small{
+  border-radius: 5px;
+}
 
 
 
+@media (min-width:800px) {
+  
+  .about{
+    flex-direction: row;
+  } 
+  .small-image{
+    width:auto;
+  }
+  .contact-us-section {
+    width: 40rem;
+  }
+  .contact-container{
+    padding: 5px;
+  }
+}
 
 
+/* //phone loose */
+@media (max-width: 800px) {
+  .hide{
+    display: none;
+  }
+
+  nav {
+    justify-content: space-evenly;
+  }
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #234ad4;
+    color: #fff;
+    transition: top 0.5s ease;
+    align-items: center;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+    
+  }
+  nav .mainMenu li a {
+    color: #fff;
+    font-weight: bold;
+  }
+  nav .mainMenu li a:hover {
+    color: white;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+
+/* About Section */
+.about {
+  background-color: #234ad4;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  border-radius: 2em;
+  margin: 5%;
+  flex-direction: column;
+}
+
+.about-content {
+  color: #fff;
+  font-size: .8rem;
+  justify-content: left;
+  margin: 2px 2px 10px 2px;
+
+}
+
+.about-us-heading {
+  margin-top: 24px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.category_heading {
+  font-size: 24px;
+}
+
+.contributer-role-card {
+  width: 250px;
+  height: 100%;
+}
+.mentor-role-card{
+  width: 250px;
+  height: 100%;
+}
+
+.contact{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container{
+  width:80%;
+}
+
+.contact-us-section{
+  height: auto;
+  width:70%;
+  padding:5px;
+}
+
+.input-small{
+  width:90%;
+}
+
+}
+/* phone loose */
