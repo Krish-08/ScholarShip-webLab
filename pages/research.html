@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./research.css" />
+
+    <title>ScholarshipPortal</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav style="align-items: center">
+      <div class="logo">
+        <a href="../index.html" class="logo_name">
+          <h1 class="logo_name_dec">
+            <span style="color: #234ad4">Schloraship</span
+            ><span style="color: #db5d17">Portal</span>
+          </h1>
+        </a>
+      </div>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a class="nav-underline" href="index.html">HOME</a></li>
+        <li><a class="nav-underline-about" href="#about">ABOUT</a></li>
+        <li><a class="nav-underline-contact" href="#contact">CATEGORY</a></li>
+        <li>
+          <a class="nav-underline-contact" href="pages/teampage.html"
+            >CONTACT</a
+          >
+        </li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+      </ul>
+    </nav>
+
+    <!--International-->
+    <div class="international">RESEARCH SCHOLARSHIP</div>
+    <!-- International Table -->
+    <div style="margin: 15px">
+      <input
+        type="text"
+        name=""
+        id="myInput"
+        placeholder="Search.."
+        style="width: 50%; padding: 10px"
+        onkeyup="searchFunction()"
+      />
+    </div>
+
+    <div
+      class="international_table"
+      style="width: 90%; display: flex; justify-content: center; margin: auto"
+    >
+      <table id="myTable">
+        <tr id="tr">
+          <th>Scholarship Name</th>
+          <th>Eligibity Criteria</th>
+          <th>Apply Link</th>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Full bright Foreign student program
+          </td>
+          <td style="justify-content: center; align-items: center">
+            Program eligibility and selection procedures vary widely by country.
+            Please see the country specific websites to find information about
+            the Fulbright Program in your home country, including eligibility
+            requirements and application guidelines.
+          </td>
+          <td>
+            <a href="http://foreign.fulbrightonline.org/about/foreign-fulbright"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Vanier Canada Graduate Scholarships (Vanier CGS)
+          </td>
+          <td style="justify-content: center; align-items: center">
+            To be considered for a Vanier CGS, you must:
+            <br />• be nominated by only one Canadian institution, which must
+            have received a Vanier CGS quota; <br />• be pursuing your first
+            doctoral degree (including joint undergraduate/graduate research
+            program such as: MD/PhD, DVM/PhD, JD/PhD – if it has a demonstrated
+            and significant research component). Note that only the PhD portion
+            of a combined degree is eligible for funding; <br />• intend to
+            pursue, in the summer semester or the academic year following the
+            announcement of results, full-time doctoral (or a joint graduate
+            program such as: MD/PhD, DVM/PhD, JD/PhD) studies and research at
+            the nominating institution; Note that only the PhD portion of a
+            combined degree is eligible for funding;
+          </td>
+          <td>
+            <a href="http://www.vanier.gc.ca/en/home-accueil.html"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Australia Research Training Program (RTP) Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            To be eligible for a RTP Stipend, RTP Fees Offset or RTP Allowance,
+            a student must be a domestic student or an overseas student enrolled
+            in an accredited HDR course of study at an Australian HEP. The basic
+            eligibility criteria for an RTP are listed in Section 1.5 of the
+            Commonwealth Scholarships Guidelines (Research) 201
+          </td>
+          <td>
+            <a href="https://www.education.gov.au/research-training-program"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Swiss Government Excellence Scholarships for Foreign Students
+          </td>
+          <td style="justify-content: center; align-items: center">
+            Please refer to the country-specific fact sheets for general and
+            specific eligibility criteria.
+          </td>
+          <td>
+            <a
+              href="https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships.html"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            CIMO Doctoral Fellowships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            The prerequisite for applying is that the visiting researcher must
+            have established contacts with a Finnish host university – please
+            see the section ‘Doctoral Admissions for further information (you’ll
+            find links to the universities’ Doctoral Admissions pages there).
+            You are also advised to visit the Finnish universities’ own
+            websites for info on Doctoral level study and research options.
+          </td>
+          <td>
+            <a href="https://www.oph.fi/en/development/edufi-fellowship"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            New Zealand International Doctoral Research Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            You must hold a minimum grade equivalent to a GPA of 3.7 on a 4.0
+            scale OR an A to A+ average in your most recent or highest post
+            graduate tertiary qualification You must have a confirmed,
+            non-conditional offer of place for a (direct-start) PhD programme at
+            a New Zealand university If you have commenced your PhD studies in
+            New Zealand, your start date must be after 1 July 2017 You must
+            conduct your PhD study in New Zealand (not from a distance) You must
+            not hold citizenship or PR status in New Zealand or Australia.
+          </td>
+          <td>
+            <a
+              href="https://www.studyinnewzealand.govt.nz/how-to-apply/scholarship/search-results?keyword=new-zealand-international-doctoral-research-scholarships-nzidrs"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Adelaide Global Academic Excellence Scholarships for International
+            Students
+          </td>
+          <td style="justify-content: center; align-items: center">
+            Available for students commencing in the period between 2021-2025; •
+            Available for commencing direct-entry international undergraduate
+            and postgraduate coursework students, including those who are
+            required to undertake a Pre-Enrolment English Program (PEP) prior to
+            their degree commencement; • Open to citizens of any country (except
+            Australia and New Zealand); • Available for study in any discipline.
+            As a general guide, the University of Adelaide will consider
+            applicants who have achieved an academic level on par with the
+            following: • For undergraduate programs: Raw ATAR of 98 OR its
+            equivalent • For postgraduate coursework programs: A GPA 6.8 out of
+            7 OR its equivalent
+          </td>
+          <td>
+            <a
+              href="https://international.adelaide.edu.au/admissions/scholarships/global-academic-excellence-scholarship-2021-2025"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            University of Melbourne Graduate Research Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            To be eligible for this scholarship, you need to have applied for
+            and meet the entry requirements for a graduate research degree at
+            the University of Melbourne, or be currently enrolled in a graduate
+            research degree at the University of Melbourne.
+          </td>
+          <td>
+            <a
+              href="https://scholarships.unimelb.edu.au/awards/graduate-research-scholarships"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            University of Sydney International Scholarship
+          </td>
+          <td style="justify-content: center; align-items: center">
+            You must: • be a commencing or enrolled international student • have
+            an outstanding record of academic achievement and research potential
+            • have an unconditional offer of admission or be currently enrolled
+            in a master’s by research or PhD at the University of Sydney.
+          </td>
+          <td>
+            <a
+              href="https://sydney.edu.au/scholarships/e/university-sydney-international-scholarship.html"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Cambridge International Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            A University Committee draws up one ranked list of all PhD
+            candidates across all disciplines. The only factors taken into
+            consideration in agreeing this list are academic qualifications,
+            references and research potential. The financial situation of
+            applicants does not affect the selection of scholarship winners.
+          </td>
+          <td>
+            <a
+              href="https://www.cambridgetrust.org/scholarships/v-c-awards-and-cambridge-international-scholarships/"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Warwick Chancellor’s International Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            Applicants for a Chancellor’s International Scholarship must also be
+            applying for a PhD at the University of Warwick to begin in October
+            2022; • Students currently enrolled on a PhD or MPhil/PhD at the
+            University of Warwick may apply in their first year of registration
+            only. • Applicants must expect to be ‘overseas’ for fees purposes,
+            but there is no other nationality criteria; • Applicants may be from
+            any discipline at Warwick. • Scholarships cannot be deferred to the
+            next academic year.
+          </td>
+          <td>
+            <a
+              href="https://warwick.ac.uk/services/dc/schols_fund/scholarships_and_funding/chancellors_int"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Edinburgh Global Research Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            The awards are open to overseas nationals commencing a PhD in any
+            field of study in 2020-2021. Applicants must be liable to pay
+            tuition fees at the rate applicable to overseas students and must
+            have been applied admission to a full-time PhD research programme of
+            study. Applicants must be of outstanding academic merit and research
+            potential. Although candidates with an upper second class honours
+            Bachelor’s degree (or the overseas equivalent) can be considered, in
+            order to be competitive you should really have a first class
+            Bachelor’s degree supplemented by an excellent Master’s degree.
+            Other factors such as financial status, nationality and the proposed
+            field of study are not taken into account.
+          </td>
+          <td>
+            <a
+              href="https://www.ed.ac.uk/history-classics-archaeology/graduate-school/fees-funding/funding/phd/global"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Vice Chancellor’s International Scholarship for Research Excellence
+            at University of Nottingham
+          </td>
+          <td style="justify-content: center; align-items: center">
+            You can apply for this scholarship if you: • are classed as an
+            overseas student for fee purposes AND • hold an offer to start a
+            full-time PhD or MPhil in any subject (excluding engineering) at
+            University of Nottingham UK with a start date that falls on or
+            between 1 October 2020 and 1 February 2021
+          </td>
+          <td>
+            <a
+              href="https://www.nottingham.ac.uk/pgstudy/funding/vc-scholarship-for-research-excellence-international"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Sussex Chancellor’s International Research Scholarships
+          </td>
+          <td style="justify-content: center; align-items: center">
+            Applicants must be classified as an international fee paying student
+            and able to commence their PhD in September 2018 or January 2019.
+            Applicants must meet the University’s academic entry requirements
+            and the IELTS English Language Requirements contained in the
+            postgraduate prospectus. Applicants must meet the University’s
+            academic entry requirements and English language requirements.
+          </td>
+          <td>
+            <a
+              href="http://www.sussex.ac.uk/study/phd/fees-and-scholarships/scholarships/view/795"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Global Minds Doctoral Scholarships Programme at KU Leuven
+          </td>
+          <td style="justify-content: center; align-items: center">
+            The applicant must be a citizen of one of the countries included in
+            the scholarship country list. Candidates who have citizenship of the
+            EU will not be selected. The same applies to applicants with a
+            long-term EU residence permit. The candidate’s latest Master’s
+            degree must have been awarded no more than ten years prior to 1
+            October 2022 (including the ongoing calendar year). The candidate
+            must have been awarded an academic grade equivalent to High
+            Distinction or higher. Degrees obtained with a final score
+            equivalent to second class second/lower division will not be taken
+            into consideration. The research project must be of excellent
+            academic quality, with a special focus on the development relevance
+            of the proposal.
+          </td>
+          <td>
+            <a
+              href="https://www.kuleuven.be/english/international/development-cooperation/funding-possibilities/research-possibilities/phdcalls"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Institute Post-Doctoral Fellowship – IIT Ropar
+          </td>
+          <td style="justify-content: center; align-items: center">
+            It is mandatory for students to apply within five years after the
+            completion of PhD. The fellowship is also open for candidates who
+            have completed their PhD thesis under the supervision or
+            co-supervision of IIT-Ropar faculty members. In this case, students
+            are allowed to apply after three years of completion of their PhD
+            degree.
+          </td>
+          <td>
+            <a href="https://www.iitrpr.ac.in/post-doctoral-opportunities"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            Institute Post-Doctoral Fellowship – IIT Ropar
+          </td>
+          <td style="justify-content: center; align-items: center">
+            It is mandatory for students to apply within five years after the
+            completion of PhD. The fellowship is also open for candidates who
+            have completed their PhD thesis under the supervision or
+            co-supervision of IIT-Ropar faculty members. In this case, students
+            are allowed to apply after three years of completion of their PhD
+            degree.
+          </td>
+          <td>
+            <a href="https://www.iitrpr.ac.in/post-doctoral-opportunities"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="justify-content: center; align-items: center; padding: 5px"
+          >
+            SERB National Post-Doctoral Fellowship (N-PDF)
+          </td>
+          <td style="justify-content: center; align-items: center">
+            Under this fellowship, the students below the age of 35 who have
+            obtained a PhD/MD/MS degree from a recognised university can avail
+            variable benefits to carry out research at postdoctoral level. The
+            candidates who have submitted their PhD/MD/MS thesis and are
+            awaiting award can also apply. However, they will receive a lower
+            fellowship amount till they qualify the degree.
+          </td>
+          <td>
+            <a href="https://prism.serbonline.in/RS-NPDF"
+              ><button
+                style="
+                  background-color: #234ad4;
+                  color: white;
+                  height: 30px;
+                  width: 70px;
+                "
+              >
+                Apply
+              </button></a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script>
+    const searchFunction = () => {
+      let filter = document.getElementById("myInput").value.toUpperCase();
+      let table = document.getElementById("myTable");
+      let tr = table.getElementsByTagName("tr");
+
+      for (var i = 0; i < tr.length; i++) {
+        let td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          let textvalue = td.textContent || td.innerText;
+          if (textvalue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    };
+  </script>
+</html>

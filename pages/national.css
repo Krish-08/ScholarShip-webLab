@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  animation: normal;
+}
+/* Navbar */
+nav {
+  background: rgb(255, 255, 255);
+  color: #234ad4;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0px 0px 35px 35px;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: #234ad4;
+  font-size: 1rem;
+  font-weight: bold;
+  /* transition: 1s; */
+}
+nav .mainMenu li a:hover {
+  color: #234ad4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav .openMenu {
+  font-size: 1rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-evenly;
+  }
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #234ad4;
+    color: #fff;
+    transition: top 0.5s ease;
+    align-items: center;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a {
+    color: #fff;
+    font-weight: bold;
+  }
+  nav .mainMenu li a:hover {
+    color: white;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+.nav-underline,
+.nav-underline-about,
+.nav-underline-contact,
+.nav-underline-team {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-underline:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 1.3rem;
+  left: 42%;
+  transform: translateX(-50%);
+  background-color: #ff7518;
+  width: 2rem;
+  height: 2px;
+  border-radius: 0.8rem;
+}
+
+.nav-underline-about:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 1.3rem;
+  left: 38%;
+  transform: translateX(-50%);
+  background-color: #ff7518;
+  width: 2rem;
+  height: 2px;
+  border-radius: 0.8rem;
+}
+
+.nav-underline-contact:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 1.3rem;
+  left: 31%;
+  transform: translateX(-50%);
+  background-color: #ff7518;
+  width: 2rem;
+  height: 2px;
+  border-radius: 0.8rem;
+}
+
+.logo_name {
+  text-decoration: none;
+}
+.logo_name_dec {
+  color: black;
+}
+
+/* International Name */
+.international {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 1vh;
+  color: #234ad4;
+  font-size: 3rem;
+}
+
+/* Table Styling */
+table {
+  table-layout: auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+tr {
+  border: 1px solid black;
+}
