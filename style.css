@@ -433,6 +433,23 @@ nav .mainMenu .closeMenu,
     padding: 12px;
   }
 
+  input {
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    background-color: #f6f6f6;
+    flex: 1;
+  }
+
+  .input {
+    background-color: #f6f6f6;
+    padding: 0px 5px;
+    border: 2px solid rgba(216, 216, 216, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+  
 
 /* About Section */
 .about {

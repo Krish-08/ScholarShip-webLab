@@ -20,20 +20,24 @@
         <h1>Request Scholarship</h1>
         <p>Don't be Shy!!</p>
 
-        <form class="flex-c">
+        <form class="flex-c" name="formName" id="formName">
             <div class="input-box">
                 <span class="label">Name</span>
                 <div class=" flex-r input">
-                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Name" name="name">
                     <i class="fas fa-pen-to-square"></i>
                 </div>
-                </div>
+                <p class="ErrorMessage" id="nameError"></p>
+              </div>
+
           <div class="input-box">
             <span class="label">E-mail</span>
-            <div class=" flex-r input">
-              <input type="text" placeholder="name@abc.com">
+            <div class=" flex-r input" id="emailDiv" >
+              <input type="text"   placeholder="xyz@abc.com"  name="email" required>
               <i class="fa-solid fa-at"></i>
+              
             </div>
+            <p class="ErrorMessage" id="emailError"></p>
           </div>
 
           <div class="input-box">
@@ -64,4 +68,8 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="/validate.js"></script>
 </body>
+
+

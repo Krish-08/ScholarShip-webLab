@@ -62,11 +62,13 @@ form {
   margin: 10px 0px;
   width: 100%;
 }
+
 .label {
   font-size: 15px;
   color: black;
   margin-bottom: 3px;
 }
+
 .input {
   background-color: #f6f6f6;
   padding: 0px 5px;
@@ -77,6 +79,23 @@ form {
 }
 
 input {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: #f6f6f6;
+  flex: 1;
+}
+
+.ErrorMessage{
+  font-family:"Poppins", sans-serif !important;
+  color: red !important;
+  margin-top: 1px;
+  margin-left:10px !important;
+  font-size:13px !important;
+}
+
+textarea{
+  
   border: none;
   outline: none;
   padding: 10px 5px;
