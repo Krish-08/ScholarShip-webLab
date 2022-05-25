@@ -15,7 +15,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+    <link rel="stylesheet" href="/requestformstyle.css">  
+    <script src="https://kit.fontawesome.com/0a860c7d5d.js" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="style.css" />
     <title>Scholarship Portal</title>
   </head>
@@ -49,7 +50,7 @@
             >CONTACT</a
           >
         </li>
-        <li><a class="nav-underline-contact" href="#">REQUEST A SCHOLARSHIP</a>
+        <li><a class="nav-underline-contact" href="#login-show">REQUEST A SCHOLARSHIP</a>
         <div class="closeMenu"><i class="fa fa-times"></i></div>
       </ul>
     </nav>
@@ -235,10 +236,71 @@
           <button class="btn">Submit</button>
       </form> -->
 
-      <label></label>
+  
       
       </div>
     </div>
+
+    <div class=" login-form flex-r container" id="login-show">
+      <div class="flex-r login-wrapper">
+        <div class="login-text">
+          <div class="logo">
+            <span><i class="fab fa-speakap"></i></span>
+            <span>ScholarSearch</span>
+          </div>
+          <h1>Request Scholarship</h1>
+          <p>Didn't find a right scholarship.Don't Worry!! Request here</p>
+  
+          <form class="flex-c" name="formName" id="formName">
+              <div class="input-box">
+                  <span class="label">Name</span>
+                  <div class=" flex-r input">
+                      <input type="text" placeholder="Name" name="name">
+                      <i class="fas fa-pen-to-square"></i>
+                  </div>
+                  <p class="ErrorMessage" id="nameError"></p>
+                </div>
+  
+            <div class="input-box">
+              <span class="label">E-mail</span>
+              <div class=" flex-r input" id="emailDiv" >
+                <input type="text"   placeholder="xyz@abc.com"  name="email" required>
+                <i class="fa-solid fa-at"></i>
+                
+              </div>
+              <p class="ErrorMessage" id="emailError"></p>
+            </div>
+  
+            <div class="input-box">
+              <label for="scholartype" class="label">Choose Scholarship Type</label>
+              
+                  <select class=" flex-r input"  id="scholartype" name="scholartype" style="width: 100%; padding: 5px;">
+                      <option class=" flex-r input" value="National">National</option>
+                      <option value="International">International</option>
+                      <option value="Regional">Regional</option>
+                      <option value="Research">Research</option>
+                      <option value="Private">Private</option>
+                    </select>
+              
+            </div>
+  
+            <div class="input-box">
+              <span class="label">Description</span>
+              <textarea class=" flex-r input" type="text" style="width: 100%;"  rows="4" cols="50" placeholder="Describe Your Expectation"></textarea>
+              
+            </div>
+  
+      
+  
+            <input class="btn" type="submit" value="Submit Request">
+            
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  
+    <script type="text/javascript" src="/validate.js"></script>
   </body>
   <script src="Js/app.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
